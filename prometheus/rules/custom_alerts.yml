@@ -1,0 +1,35 @@
+groups:
+  - name: system_main_server
+    rules:
+      - alert: HighCpuUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{instance="203.0.113.11:9100",mode="idle"}[5m])) * 100) > 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: CPU acima de 90%
+          description: Uso de CPU acima de 90%
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes{instance="203.0.113.11:9100"} / node_memory_MemTotal_bytes{instance="203.0.113.11:9100"})) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: Memória acima de 80%
+          description: Uso de memória acima de 80%
+      - alert: InstanceDown
+        expr: up{instance="203.0.113.11:9100"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: Instância offline
+          description: Instância não está acessível
+      - alert: NginxDown
+        expr: namedprocess_namegroup_num_procs{instance="203.0.113.11:9256",groupname="nginx"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: nginx não está a correr
+          description: O nginx deixou de funcionar

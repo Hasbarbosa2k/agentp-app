@@ -1,0 +1,40 @@
+# Cursor Rules - Frontend AgentP
+
+## 🚫 REGRAS CRÍTICAS - NUNCA QUEBRAR
+
+### 1. PROIBIÇÃO ABSOLUTA DE DADOS MOCK
+- **NUNCA** criar, usar ou implementar dados mock/dummy/fake
+- **NUNCA** usar dados hardcoded como fallback
+- **NUNCA** simular respostas de API
+- **NUNCA** criar dados de exemplo ou demonstração
+- Se API não existe: mostrar erro ou estado de carregamento
+- Se endpoint falha: mostrar erro, NUNCA fallback para mock
+
+### 2. GESTÃO DE ERROS DE API
+- Sempre mostrar mensagens de erro reais para o utilizador
+- States de loading enquanto aguarda resposta real
+- Empty states quando não há dados reais
+- Retry mechanisms para APIs que falharam
+- Error boundaries para erros de aplicação
+
+### 3. INTEGRAÇÃO COM BACKEND
+- Usar APENAS endpoints reais documentados
+- Verificar documentação antes de implementar
+- Se endpoint não existe: aguardar implementação no backend
+- Coordenar com backend antes de implementar funcionalidades
+
+### 4. CÓDIGO LIMPO E REAL
+- Implementar apenas funcionalidades com APIs reais
+- Comentar claramente quando funcionalidade aguarda backend
+- Remover qualquer código de mock em produção
+- Testes devem usar dados reais ou mocks específicos de teste
+
+## ✅ ALTERNATIVAS ACEITES
+- Estados de loading/carregamento
+- Mensagens de erro explicativas
+- Empty states informativos
+- Funcionalidades desabilitadas até API estar pronta
+- Placeholders visuais (sem dados)
+
+## 🎯 PRINCÍPIO FUNDAMENTAL
+**A aplicação deve funcionar apenas com dados reais ou falhar graciosamente com feedback claro ao utilizador**

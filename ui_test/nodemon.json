@@ -1,0 +1,7 @@
+{
+  "watch": ["server.js"],
+  "ignore": ["tests/**", "node_modules/**", "*.log", "*.png", "*.mp4", "*.json"],
+  "ext": "js",
+  "exec": "node server.js",
+  "verbose": false
+}

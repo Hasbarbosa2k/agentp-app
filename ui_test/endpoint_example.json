@@ -1,0 +1,93 @@
+﻿{
+    "testId":  "test-final",
+    "timestamp":  "2025-08-26T17:15:51.269Z",
+    "baseUrl":  "http://localhost:3002/tests/test-final",
+    "plan":  {
+                 "runId":  "6b28ddb4-f8e4-4e23-ba58-c0df66f48213",
+                 "testId":  "test-final",
+                 "createdAt":  "2025-08-26T16:28:44.792Z",
+                 "model":  null,
+                 "temperature":  null,
+                 "task":  "Abrir google.com e aguardar 5 segundos",
+                 "steps":  [
+
+                           ],
+                 "expected":  [
+
+                              ],
+                 "status":  "failed"
+             },
+    "planMarkdown":  "# Plano\n\n- **Run ID**: 6b28ddb4-f8e4-4e23-ba58-c0df66f48213\n- **Test ID**: test-final\n\n## Tarefa\n```\nAbrir google.com e aguardar 5 segundos\n```\n\n## Estado\nfailed",
+    "assets":  {
+                   "testId":  "test-final",
+                   "screenshots":  [
+                                       {
+                                           "name":  "step_2.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_2.png"
+                                       },
+                                       {
+                                           "name":  "step_3.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_3.png"
+                                       },
+                                       {
+                                           "name":  "step_4.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_4.png"
+                                       },
+                                       {
+                                           "name":  "step_5.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_5.png"
+                                       },
+                                       {
+                                           "name":  "step_6.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_6.png"
+                                       },
+                                       {
+                                           "name":  "step_7.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_7.png"
+                                       },
+                                       {
+                                           "name":  "step_8.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_8.png"
+                                       },
+                                       {
+                                           "name":  "step_9.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_9.png"
+                                       },
+                                       {
+                                           "name":  "step_10.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_10.png"
+                                       },
+                                       {
+                                           "name":  "step_11.png",
+                                           "url":  "http://localhost:3002/tests/test-final/screenshots/step_11.png"
+                                       }
+                                   ],
+                   "video":  {
+                                 "name":  "0656a538a805ada9fe92172028d4dd3b.mp4",
+                                 "url":  "http://localhost:3002/tests/test-final/video/0656a538a805ada9fe92172028d4dd3b.mp4"
+                             }
+               },
+    "logs":  {
+                 "available":  true,
+                 "size":  39625,
+                 "lastModified":  "2025-08-26T16:31:48.749Z",
+                 "url":  "http://localhost:3002/tests/test-final/run.log"
+             },
+    "metadata":  {
+                     "created":  "2025-08-26T16:28:44.785Z",
+                     "modified":  "2025-08-26T16:28:46.263Z",
+                     "size":  0
+                 },
+    "files":  {
+                  "total":  5,
+                  "directories":  [
+                                      "screenshots",
+                                      "video"
+                                  ],
+                  "files":  [
+                                "plan.json",
+                                "plan.md",
+                                "run.log"
+                            ]
+              }
+}

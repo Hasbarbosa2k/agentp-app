@@ -1,0 +1,24 @@
+[
+  {
+    "targets": [
+      "203.0.113.11:9100"
+    ],
+    "labels": {
+      "job": "node_exporter",
+      "system_id": "696632ae2f892cc15d2429c6",
+      "system_name": "Main server",
+      "environment": "production"
+    }
+  },
+  {
+    "targets": [
+      "203.0.113.11:9256"
+    ],
+    "labels": {
+      "job": "process_exporter",
+      "system_id": "696632ae2f892cc15d2429c6",
+      "system_name": "Main server",
+      "environment": "production"
+    }
+  }
+]

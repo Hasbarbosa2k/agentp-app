@@ -1,0 +1,35 @@
+# --- Node ---
+**/node_modules/
+**/.pnpm-store/
+**/.yarn/*
+**/.turbo/
+**/dist/
+**/build/
+**/.next/
+**/out/
+**/.vite/
+**/coverage/
+npm-debug.log*
+yarn-*.log
+
+# --- Python (ui_test, etc.) ---
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+
+# --- SO / editores ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- secrets, logs and user data: never commit ---
+.env
+.env.*
+!.env.example
+backend/logs/
+ui_test/tests/
+*.log
+git_sync.bat
+backend/storage/reports/*
+!backend/storage/reports/.gitkeep
+frontend/dist.zip
